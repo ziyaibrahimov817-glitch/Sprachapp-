@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sprachapp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <p class="badge">Deine erste Sprachlern-App</p>
+      <h1>Sprachapp</h1>
+      <p>Lerne jeden Tag neue Wörter, übe Übersetzungen und verbessere dich Schritt für Schritt.</p>
+      <button onclick="startLesson()">Neue Wörter laden</button>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Wort des Tages</h2>
+        <p class="word" id="word">Hello</p>
+        <p class="translation" id="translation">Hallo</p>
+      </div>
+
+      <div class="card">
+        <h2>Übersetzungsübung</h2>
+        <p>Übersetze ins Deutsche:</p>
+        <p class="question" id="question">Good morning</p>
+        <input id="answer" placeholder="Deine Antwort..." />
+        <button onclick="checkAnswer()">Prüfen</button>
+        <p id="result"></p>
+      </div>
+
+      <div class="card">
+        <h2>Mini Tutor</h2>
+        <p id="tip">Tipp: Übe jeden Tag 5 Minuten.</p>
+        <button onclick="showTip()">Tipp anzeigen</button>
+      </div>
+
+      <div class="card">
+        <h2>Fortschritt</h2>
+        <p><span id="score">0</span> richtige Antworten</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+  </html>
